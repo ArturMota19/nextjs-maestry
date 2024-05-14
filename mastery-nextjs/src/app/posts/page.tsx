@@ -1,7 +1,10 @@
 export default function Posts() {
   return (
     <main>
-      <p>This is my posts page</p>
+      <h1>This is my posts page</h1>
+      <p> Dynamic Post 1</p>
+      <p> Dynamic Post 2</p>
+      <p> Dynamic Post 3</p>
     </main>
   );
 }
