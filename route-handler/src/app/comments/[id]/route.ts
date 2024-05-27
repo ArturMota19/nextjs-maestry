@@ -4,7 +4,7 @@ import { redirect } from "next/navigation"
 export async function GET(request: Request, {params} : {params: {id: string}}){
   if(parseInt(params.id) > comments.length) return redirect("/comments")
   const comment = comments.find(comment => comment.id === parseInt(params.id))
-  return comment ? Response.json(comment) : "Comment not found"
+  return Response.json(comment)
 }
 
 export async function PATCH(request: Request, {params} : {params: {id: string}}){
